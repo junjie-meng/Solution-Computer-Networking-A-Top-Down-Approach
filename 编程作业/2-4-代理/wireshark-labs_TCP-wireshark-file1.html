@@ -1,0 +1,43 @@
+HTTP/1.1 200 OK
+Date: Sat, 01 Apr 2023 16:26:56 GMT
+Server: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips PHP/7.4.33 mod_perl/2.0.11 Perl/v5.16.3
+Last-Modified: Sat, 01 Apr 2023 05:59:01 GMT
+ETag: "72a-5f84005c02deb"
+Accept-Ranges: bytes
+Content-Length: 1834
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html; charset=UTF-8
+
+<TITLE>Upload page for TCP Wireshark Lab</TITLE>
+<body bgcolor="#FFFFFF">
+<p><font face="Arial, Helvetica, sans-serif" size="4">Upload page for TCP Wireshark 
+  Lab<br>
+  Computer Networking: A Top Down Approach, 6th edition</font><font face="Arial, Helvetica, sans-serif"><br>
+  Copyright 2012 J.F. Kurose and K.W. Ross, All Rights Reserved </font></p>
+<P><font face="Arial, Helvetica, sans-serif">If you have followed the instructions 
+  for the TCP Wireshark
+ Lab, you have <i>already</i> downloaded an ASCII copy of 
+  Alice and Wonderland from <a href="http://gaia.cs.umass.edu/wireshark-labs/alice.txt">http://gaia.cs.umass.edu/wireshark-labs/alice.txt</a> 
+  and you also <i>already</i> have the Wireshark packet sniffer running and capturing 
+  packets on your computer.<br>
+  </font>
+<FORM METHOD=post ACTION="http://gaia.cs.umass.edu/wireshark-labs/lab3-1-reply.htm" enctype="multipart/form-data">
+  <P><font face="Arial, Helvetica, sans-serif">Click on the Browse button below 
+    to select the directory/file name for the copy of alice.txt that is stored 
+    on your computer. </font>
+  <P> <font face="Arial, Helvetica, sans-serif">
+    <input type="file" name="file">
+    </font>
+  <P><font face="Arial, Helvetica, sans-serif">Once you have selected the file, 
+    click on the &quot;Upload alice.txt file&quot; button below. This will cause 
+    your browser to send a copy of alice.txt over an HTTP connection (using TCP) 
+    to the web server at gaia.cs.umass.edu. After clicking on the button, wait 
+    until a short message is displayed indicating the the upload is complete. 
+    Then stop your Wireshark packet sniffer - you're ready to begin analyzing the 
+    TCP transfer of alice.txt from your computer to gaia.cs.umass.edu!!</font> 
+  <P>
+    <INPUT TYPE=SUBMIT value="Upload alice.txt file"> 
+</FORM>
+
+
